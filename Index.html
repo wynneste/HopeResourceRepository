@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Library | Hope Church</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="filters">
+            <h3>Filter Resources</h3>
+            
+           <!-- Dropdown for Category -->
+<div class="dropdown">
+    <button class="dropdown-toggle">Category</button>
+    <div class="dropdown-content">
+        <label><input type="checkbox" name="category" value="Accountability"> Accountability</label>
+        <label><input type="checkbox" name="category" value="Belief"> Belief</label>
+        <label><input type="checkbox" name="category" value="Bible"> Bible</label>
+        <label><input type="checkbox" name="category" value="Boundaries"> Boundaries</label>
+        <label><input type="checkbox" name="category" value="Busyness"> Busyness</label>
+        <label><input type="checkbox" name="category" value="Career"> Career</label>
+        <label><input type="checkbox" name="category" value="Character"> Character</label>
+        <label><input type="checkbox" name="category" value="Christianity"> Christianity</label>
+        <label><input type="checkbox" name="category" value="Community"> Community</label>
+        <label><input type="checkbox" name="category" value="Contentment"> Contentment</label>
+        <label><input type="checkbox" name="category" value="Dating"> Dating</label>
+        <label><input type="checkbox" name="category" value="Doubt"> Doubt</label>
+        <label><input type="checkbox" name="category" value="Emotional Health"> Emotional Health</label>
+        <label><input type="checkbox" name="category" value="Evangelism"> Evangelism</label>
+        <label><input type="checkbox" name="category" value="Faith"> Faith</label>
+        <label><input type="checkbox" name="category" value="Finances"> Finances</label>
+        <label><input type="checkbox" name="category" value="For Men"> For Men</label>
+        <label><input type="checkbox" name="category" value="For Women"> For Women</label>
+        <label><input type="checkbox" name="category" value="Forgiveness"> Forgiveness</label>
+        <label><input type="checkbox" name="category" value="Grace"> Grace</label>
+        <label><input type="checkbox" name="category" value="Happiness"> Happiness</label>
+        <label><input type="checkbox" name="category" value="Hard Times"> Hard Times</label>
+        <label><input type="checkbox" name="category" value="Identity"> Identity</label>
+        <label><input type="checkbox" name="category" value="Influence"> Influence</label>
+        <label><input type="checkbox" name="category" value="Judgment"> Judgment</label>
+        <label><input type="checkbox" name="category" value="Love"> Love</label>
+        <label><input type="checkbox" name="category" value="Marriage"> Marriage</label>
+        <label><input type="checkbox" name="category" value="Parenting"> Parenting</label>
+        <label><input type="checkbox" name="category" value="Perseverance"> Perseverance</label>
+        <label><input type="checkbox" name="category" value="Pride"> Pride</label>
+        <label><input type="checkbox" name="category" value="Purpose"> Purpose</label>
+        <label><input type="checkbox" name="category" value="Relationships"> Relationships</label>
+        <label><input type="checkbox" name="category" value="Seasonal"> Seasonal</label>
+        <label><input type="checkbox" name="category" value="Spiritual Growth"> Spiritual Growth</label>
+        <label><input type="checkbox" name="category" value="Trust"> Trust</label>
+        <label><input type="checkbox" name="category" value="Values"> Values</label>
+        <label><input type="checkbox" name="category" value="Wisdom"> Wisdom</label>
+    </div>
+</div>
+
+            <!-- Dropdown for Type of Media -->
+            <div class="dropdown">
+                <button class="dropdown-toggle">Type of Media</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox" name="media-type" value="Audio"> Audio</label>
+                    <label><input type="checkbox" name="media-type" value="Video"> Video</label>
+                    <label><input type="checkbox" name="media-type" value="Text"> Text</label>
+                </div>
+            </div>
+
+            <!-- Dropdown for Target Audience -->
+            <div class="dropdown">
+                <button class="dropdown-toggle">Target Audience</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox" name="audience" value="Adults"> Adults</label>
+                    <label><input type="checkbox" name="audience" value="Teens"> Teens</label>
+                </div>
+            </div>
+
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search resources...">
+                <button onclick="searchResources()">Search</button>
+            </div>
+        </section>
+
+        <!-- Search Results -->
+        <section id="resources">
+            <div id="resource-list">
+                <!-- Resources will be injected here via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Sticky Footer -->
+    <div id="footer"></div>
+
+    <script src="assets/script.js"></script>
+    <script src="assets/loadHeaderFooter.js"></script> <!-- Load header and footer -->
+</body>
+</html>

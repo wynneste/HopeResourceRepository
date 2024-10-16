@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EFE6D2; /* Cream */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown-toggle {
+    background-color: #E8462D; /* Orange */
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Search bar */
+.search-bar {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: #E8462D;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #00C5FA;
+}
+
+/* 3-Column Grid for Search Results */
+#resource-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+.resource-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: scale(1.05);
+}
+
+.resource-image {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Limit image height */
+    object-fit: cover; /* Maintain image aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.resource-card h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.resource-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.resource-card button {
+    background-color: #E8462D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.resource-card button:hover {
+    background-color: #00C5FA;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #resource-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #resource-list {
+        grid-template-columns: 1fr;
+    }
+}
